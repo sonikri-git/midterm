@@ -7,6 +7,13 @@ public class ProductManager {
         double discounted = calculateDiscount(price, discountPercent);
         System.out.println("Discounted price: " + discounted);
     }
+    /**
+     * Calculates the price after applying a percentage discount.
+     * @param price   original price (>= 0)
+     * @param percent discount percent (0–100)
+     * @return price after discount
+     * @throws IllegalArgumentException if percent is outside 0–100
+     */
 
     // (Doc comment will be added in the next commit)
     public static double calculateDiscount(double price, double percent) {
